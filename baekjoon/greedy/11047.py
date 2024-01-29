@@ -7,5 +7,5 @@ count = 0
 for coin in reversed(coin_list):
     count += k //coin
     k %= coin
-
+    
 print(count)
