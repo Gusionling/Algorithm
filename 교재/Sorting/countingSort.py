@@ -7,5 +7,5 @@ for i in range(len(array)):
     count[array[i]]+1 #각 데이터에 해당하는 인덱스 값 증가
     
 for i in range(len(count)):
-    for j in range([i]):
+    for j in range(count[i]):
         print(i, end=' ') # 띄어쓰기를 구분으로 등장한 회수만큼 출력
