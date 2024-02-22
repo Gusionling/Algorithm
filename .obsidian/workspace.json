@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "c1740aabc042d294",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a70cb7a1043267d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03bb7d479ba9329e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "지식/DP/Dynamic Programing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f9e027d3dc63970c",
+    "type": "split",
+    "children": [
+      {
+        "id": "1ae3a15c560b27a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9682dd09f8585fc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a336ed48fd7cec8c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f3795b40a5f46737",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "94e8e0109e9bfabf",
+    "type": "split",
+    "children": [
+      {
+        "id": "1c2123b9b9145e68",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ecc1c7a2c7ac5983",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "지식/DP/Dynamic Programing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "76b6d93de3136362",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "지식/DP/Dynamic Programing.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4315c6450c469918",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "be5e88ab6413e910",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "지식/DP/Dynamic Programing.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "03bb7d479ba9329e",
+  "lastOpenFiles": [
+    "지식/DP/img/Pasted image 20240222172318.png",
+    "지식/DP/img/Pasted image 20240222172227.png",
+    "교재/Dynamic Programing/피보나치 수열.py",
+    "교재/Dynamic Programing",
+    "지식/DP/img/Pasted image 20240222130545.png",
+    "지식/DP/Dynamic Programing.md",
+    "지식/DP/img",
+    "지식/DP",
+    "지식"
+  ]
+}
