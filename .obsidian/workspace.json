@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "94e8e0109e9bfabf",
@@ -148,11 +149,23 @@
   },
   "active": "03bb7d479ba9329e",
   "lastOpenFiles": [
-    "지식/DP/img/Pasted image 20240222172318.png",
-    "지식/DP/img/Pasted image 20240222172227.png",
+    "교재/Dynamic Programing/병사 배치하기.py",
+    "지식/DP/img/Pasted image 20240226152550.png",
+    "지식/DP/img/Pasted image 20240226151916.png",
+    "지식/DP/img/Pasted image 20240226150013.png",
+    "지식/DP/img/Pasted image 20240226145944.png",
+    "지식/DP/img/Pasted image 20240226145920.png",
+    "교재/Dynamic Programing/금광.py",
+    "지식/DP/img/Pasted image 20240225180503.png",
+    "지식/DP/img/Pasted image 20240225173327.png",
+    "지식/DP/img/Pasted image 20240225173208.png",
+    "지식/DP/img/Pasted image 20240223125036.png",
+    "교재/Dynamic Programing/효율적인 화폐 구성.py",
+    "지식/DP/img/Pasted image 20240223115811.png",
+    "교재/Dynamic Programing/1로 만들기.py",
+    "교재/Dynamic Programing/개미 전사.py",
     "교재/Dynamic Programing/피보나치 수열.py",
     "교재/Dynamic Programing",
-    "지식/DP/img/Pasted image 20240222130545.png",
     "지식/DP/Dynamic Programing.md",
     "지식/DP/img",
     "지식/DP",
