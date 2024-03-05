@@ -12,6 +12,7 @@ def bnf(cash, list):
     return money + num * list[13]
 
 def timing(cash, list):
+    
     money = cash
     num = 0
     up = 0
@@ -25,20 +26,19 @@ def timing(cash, list):
             up = 0
         else:
             continue
-        if down == 3:
+        
+        if down >= 3:
             num += (money // list[i])
             money %= list[i]
-            down = 0
-        elif up == 3:
+        elif up >= 3:
             money += num * list[i]
             num = 0
-            up = 0
     return money + num * list[13]
 
 if bnf(cash, stock) > timing(cash, stock):
-    print("BNF")
+    print("BNP = ", bnf(cash, stock), "TIMING = ", timing(cash, stock))
 elif bnf(cash, stock) < timing(cash, stock):
-    print("TIMING")
+    print("BNF = ", bnf(cash, stock), "TIMING = ", timing(cash, stock))
 else:
     print("SAMESAME")
             
