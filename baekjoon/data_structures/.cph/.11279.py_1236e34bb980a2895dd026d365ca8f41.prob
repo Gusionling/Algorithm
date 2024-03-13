@@ -1,0 +1,1 @@
+{"name":"Local: 11279","url":"f:\\study\\Algorithm\\baekjoon\\data_structures\\11279.py","tests":[{"id":1710308417115,"input":"13\n0\n1\n2\n0\n0\n3\n2\n1\n0\n0\n0\n0\n0","output":"0\n2\n1\n3\n2\n1\n0\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\study\\Algorithm\\baekjoon\\data_structures\\11279.py","group":"local","local":true}
