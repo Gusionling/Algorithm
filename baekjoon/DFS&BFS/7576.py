@@ -26,9 +26,16 @@ def bfs(graph):
             ny = y + dy[i]
             if nx < 0 or nx >= n or ny < 0 or ny >= m:
                 continue
+            #여러 군데에서 확장이 되기 때문에 업데이트는 최소값으로 유지 되어야한다. 
+            #이렇게 안해도 통과되기는 하더라 아마 queue에 들어가는 순서 때문에 그러지 않을까 싶다. 
+            if graph[nx][ny] != 0:
+                if graph[x][y] + 1 < graph[nx][ny]:
+                    graph[nx][ny] = graph[x][y] + 1
+                    queue.append((nx, ny))
             if graph[nx][ny] == 0:
                 graph[nx][ny] = graph[x][y] + 1
                 queue.append((nx, ny))
+
     return find_max_positive(graph)
 
 def find_max_positive(nested_graph):

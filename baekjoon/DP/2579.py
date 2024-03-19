@@ -6,9 +6,14 @@ import sys
 
 input = sys.stdin.readline
 
-n = int(input())
+#이는 n이 301보다 작은 경우 리스트의 크기가 301보다 작아집니다. 
+#이 경우, d[1] = stairs[1] + d[0] 또는 d[2] = max(stairs[2] + stairs[0], stairs[2] + stairs[1]) 같은 초기화 부분에서 인덱스 에러(IndexError)가 발생할 수 있습니다. 
+# n = 1인경우 인덱스 에러가 발생한다. 
 
-stairs = [int(input()) for _ in range(n)]
+n = int(input())
+stairs = [0] * 301
+for i in range(n):
+    stairs[i] = int(input())
 
 d = [0]*301
 #점화식을 보면 3단계 전까지는 봐야하기 때문에 d[3]까지 적어준다. 
