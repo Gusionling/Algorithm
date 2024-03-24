@@ -19,6 +19,8 @@ def union(x, y):
     rooty = find(y)
 
     if rootx != rooty:
+        #union을 하는 과정에서 
+        #진실을 알고있는 집합의 원소가 부모가 될 수 있게
         if rootx in known:
             parent[rooty] = rootx
         elif rooty in known:
