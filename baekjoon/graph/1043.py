@@ -5,7 +5,7 @@ n, m = map(int, input().split())
 
 parent = [ i for i in range(n+1)]
 
-array = list(map(int, input().split()))
+array = [list(map(int, input().split()))]
 known = array[1:]
 
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "지식/DP/Dynamic Programing.md",
+                "file": "지식/Data Structure/Java.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 236.5
   },
   "right": {
     "id": "94e8e0109e9bfabf",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "지식/DP/Dynamic Programing.md",
+                "file": "지식/Data Structure/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "지식/DP/Dynamic Programing.md",
+                "file": "지식/Data Structure/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "지식/DP/Dynamic Programing.md"
+                "file": "지식/Data Structure/Java.md"
               }
             }
           }
@@ -149,26 +148,37 @@
   },
   "active": "03bb7d479ba9329e",
   "lastOpenFiles": [
-    "교재/Dynamic Programing/병사 배치하기.py",
-    "지식/DP/img/Pasted image 20240226152550.png",
-    "지식/DP/img/Pasted image 20240226151916.png",
-    "지식/DP/img/Pasted image 20240226150013.png",
-    "지식/DP/img/Pasted image 20240226145944.png",
-    "지식/DP/img/Pasted image 20240226145920.png",
-    "교재/Dynamic Programing/금광.py",
-    "지식/DP/img/Pasted image 20240225180503.png",
-    "지식/DP/img/Pasted image 20240225173327.png",
-    "지식/DP/img/Pasted image 20240225173208.png",
-    "지식/DP/img/Pasted image 20240223125036.png",
-    "교재/Dynamic Programing/효율적인 화폐 구성.py",
-    "지식/DP/img/Pasted image 20240223115811.png",
-    "교재/Dynamic Programing/1로 만들기.py",
-    "교재/Dynamic Programing/개미 전사.py",
-    "교재/Dynamic Programing/피보나치 수열.py",
-    "교재/Dynamic Programing",
+    "baekjoon/math/11720.java",
+    "지식/알고리즘 기초/알고리즘 기초.md",
+    "지식/Data Structure/Java.md",
+    "지식/Data Structure/java",
+    "baekjoon/graph/14940.py",
+    "baekjoon/math/test.java",
+    "지식/분할정복/분할정복.md",
+    "지식/알고리즘 기초",
+    "지식/binary search/이분 탐색.md",
+    "지식/분할정복/img",
+    "지식/분할정복",
+    "지식/Math/구간 합(Interval Sum).md",
+    "지식/Math/img",
+    "지식/Math/img/Pasted image 20240318143449.png",
+    "지식/Data Structure/투 포인터(Two Pointers).md",
+    "지식/Math/소수 판별 알고리즘.md",
+    "지식/그래프 이론/최단 경로 알고리즘.md",
+    "지식/Math",
+    "지식/그래프 이론/DFS&BFS.md",
     "지식/DP/Dynamic Programing.md",
-    "지식/DP/img",
-    "지식/DP",
-    "지식"
+    "baekjoon/data_structures/2606.py",
+    "baekjoon/DFS&BFS/1697.py",
+    "지식/그래프 이론/img/Pasted image 20240312215652.png",
+    "지식/그래프 이론/img/Pasted image 20240312215626.png",
+    "지식/그래프 이론/img/Pasted image 20240312215609.png",
+    "지식/그래프 이론/img/Pasted image 20240312213900.png",
+    "지식/그래프 이론/img/Pasted image 20240312213825.png",
+    "지식/그래프 이론/img/Pasted image 20240311001519.png",
+    "지식/그래프 이론/img/Pasted image 20240311001501.png",
+    "지식/그래프 이론/img/Pasted image 20240304154926.png",
+    "지식/그래프 이론/img/Pasted image 20240304154837.png",
+    "(.md"
   ]
 }
