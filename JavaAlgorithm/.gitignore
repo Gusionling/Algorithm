@@ -29,3 +29,6 @@ bin/
 .DS_Store
 
 Main.java
+src/.cph/**
+.idea
+
