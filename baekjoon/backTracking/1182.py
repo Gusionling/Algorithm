@@ -7,6 +7,7 @@ nums = list(map(int, input().split()))
 count = 0
 
 def backTracking(idx):
+    #Declare at Not outside, but inside
     global count
     if sum(box) == S and len(box) >0:
         count = count + 1
