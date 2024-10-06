@@ -1,10 +1,7 @@
-import sys
-input = sys.stdin.readline
+n,m = map(int, input().split())
+money = list(map(int, input().split()))
 
-n, m = map(int, input().split())
-salary = list(map(int, input().split()))
-
-salary.sort(reverse=True)
-
-total = sum(salary[:m])
-print(total)
+max_val = 0
+for st in range(n-(m-1)):
+    max_val = max(max_val, sum(money[st:st+m]))
+print(max_val)
