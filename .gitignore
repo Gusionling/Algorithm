@@ -3,3 +3,45 @@
 
 .obsidian/
 .idea/
+
+# Global ignores
+.DS_Store
+*.log
+*.tmp
+
+# Ignore IntelliJ IDEA files
+.idea/
+*.iml
+
+# Ignore build artifacts
+out/
+build/
+bin/
+
+# Java-specific ignores (redundant to avoid duplication)
+*.class
+*.jar
+*.war
+*.ear
+
+# C-specific ignores
+*.o
+*.obj
+*.so
+*.exe
+
+# Exclude src directories in Java
+!Java/src/main/**/
+!Java/src/test/**/
+
+# Ignore VSCode files
+.vscode/
+
+# Ignore other IDEs
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
