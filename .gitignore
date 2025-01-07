@@ -45,3 +45,11 @@ bin/
 .settings
 .springBeans
 .sts4-cache
+
+# Ignore Obsidian files
+.obsidian/core-plugins.json
+.obsidian/workspace.json
+
+# Ignore IntelliJ IDEA specific file
+.idea/misc.xml
+JavaAlgorithm/.idea/misc.xml
