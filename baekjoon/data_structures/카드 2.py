@@ -8,8 +8,9 @@ N = int(input())
 queue = deque()
 
 #덱 초기화
-for i in range(1,N+1):
-    queue.append(i)
+#for i in range(1,N+1):
+#    queue.append(i)
+queue = deque(range(1, N+1))
 
 while len(queue) != 1:
     bye = queue.popleft()
