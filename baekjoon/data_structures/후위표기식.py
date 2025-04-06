@@ -1,9 +1,9 @@
 import sys
 from collections import deque
 
-input = sys.stdin.readline.strip()
+input = sys.stdin.readline
 
-expr = list(input())
+expr = list(input().strip())
 answer = ""
 stack = deque()
 
