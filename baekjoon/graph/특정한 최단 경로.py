@@ -21,7 +21,7 @@ def dijkstra(start):
     while heap:
         d, now = heapq.heappop(heap)
         
-        if d > dist:
+        if d > dist[now]:
             continue
         
         for next_node, weight in cost[now]:
