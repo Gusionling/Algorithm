@@ -16,7 +16,7 @@ DP = list([INF] * N for _ in range(1 << N))
 DP[1][0] = 0
 
 for mask in range(1<<N):
-    for i in range(n):
+    for i in range(N):
         if DP[mask][i] == INF:
             continue
         if not (mask & (1 << i)):
