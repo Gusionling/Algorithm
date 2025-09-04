@@ -7,7 +7,7 @@ switch = list(map(int, input().split()))
 students = int(input())
 
 for _ in range(students):
-    
+    ㅂ
     gender, Num = map(int, input().split())
     num = Num -1
     
