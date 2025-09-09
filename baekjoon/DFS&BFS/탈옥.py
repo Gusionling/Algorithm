@@ -13,7 +13,6 @@ def bfs(visited, jail, person, prisoner, h, w):
     # 밖으로 나간 case 저장
     result = []
     
-    
     if person == 0:
         queue = deque([prisoner[0]])
     else:
