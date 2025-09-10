@@ -67,13 +67,7 @@ for _ in range(T):
     dist2 = bfs_01([(prisoner[1][0]+1, prisoner[1][1]+1)], extended_jail, extended_h, extended_w)
     
     # 3. 상근이(확장된 맵의 테두리)에서 BFS
-    outside_starts = []
-    for i in range(extended_h):
-        for j in range(extended_w):
-            if (i == 0 or i == extended_h-1 or j == 0 or j == extended_w-1):
-                outside_starts.append((i, j))
-    
-    dist_outside = bfs_01(outside_starts, extended_jail, extended_h, extended_w)
+    dist_outside = bfs_01([(0,0)], extended_jail, extended_h, extended_w)
     
     # 4. 원래 맵 영역에서만 최솟값 찾기
     min_result = INF
