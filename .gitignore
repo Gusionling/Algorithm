@@ -53,3 +53,5 @@ bin/
 # Ignore IntelliJ IDEA specific file
 .idea/misc.xml
 JavaAlgorithm/.idea/misc.xml
+
+.obsidian
