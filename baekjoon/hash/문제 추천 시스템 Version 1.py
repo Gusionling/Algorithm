@@ -2,15 +2,16 @@ import sys, heapq
 
 input = sys.stdin.readline
 
-list_B = []  # 최대 힙: (-L, -P)
-list_S = []  # 최소 힙: (L, P)
-solved = set()  # 해결된 문제 번호
+max_heap = []  # (-난이도, -문제번호)
+min_heap = []  # (난이도, 문제번호)
+problems = {}  # 문제번호 -> 현재 난이도 매핑
 
 N = int(input())
 for _ in range(N):
     P, L = map(int, input().split())
-    heapq.heappush(list_B, (-L, -P))
-    heapq.heappush(list_S, (L, P))
+    heapq.heappush(max_heap, (-L, -P))
+    heapq.heappush(min_heap, (L, P))
+    problems[P] = L
 
 M = int(input())
 for _ in range(M):
@@ -18,21 +19,28 @@ for _ in range(M):
 
     if order[0] == 'recommend':
         if order[1] == '1':
-            # 어려운 문제 (최대 힙)
-            while list_B and -list_B[0][1] in solved:
-                heapq.heappop(list_B)
-            print(-list_B[0][1])
+            # 힙 상단이 유효한지 확인 (문제가 존재하고 난이도가 일치하는지)
+            while max_heap:
+                L, P = max_heap[0]
+                L, P = -L, -P
+                if P in problems and problems[P] == L:
+                    print(P)
+                    break
+                heapq.heappop(max_heap)
         else:
-            # 쉬운 문제 (최소 힙)
-            while list_S and list_S[0][1] in solved:
-                heapq.heappop(list_S)
-            print(list_S[0][1])
+            while min_heap:
+                L, P = min_heap[0]
+                if P in problems and problems[P] == L:
+                    print(P)
+                    break
+                heapq.heappop(min_heap)
             
     elif order[0] == 'add':
         P, L = int(order[1]), int(order[2])
-        heapq.heappush(list_B, (-L, -P))
-        heapq.heappush(list_S, (L, P))
+        heapq.heappush(max_heap, (-L, -P))
+        heapq.heappush(min_heap, (L, P))
+        problems[P] = L  # 현재 난이도 기록
         
-    else:  # solve
+    else:  # solved
         P = int(order[1])
-        solved.add(P)
+        del problems[P]  # 딕셔너리에서 제거
