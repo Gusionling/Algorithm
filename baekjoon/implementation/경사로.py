@@ -1,90 +1,96 @@
 import sys
 input = sys.stdin.readline
 
-N, L = map(int, input().split())
+# 경사로를 고려해야하는 경우 : 높이가 변할 때
+# L 의 길이에 따라 구현 조건이 붙게 된다.
+
+N, L = map(int,input().split())
 
 grid = []
+
 for _ in range(N):
     grid.append(list(map(int, input().split())))
+    
 
 result = 0
-
-# 행 검사
 for i in range(N):
+    # 경사로를 놓은 위치 기억
     row_visited = [False] * N
-    possible = True
-    
     for j in range(N):
-        if j != 0:
-            # 높이가 다를 때
+        # 행
+        if j != 0 and row_visited[j] == False:
+            # 높이가 달라졌을 때 
             if grid[i][j] != grid[i][j-1]:
                 diff = abs(grid[i][j] - grid[i][j-1])
-                
-                # 높이 차이가 1이 아니면 불가능
+                # 높이차가 1이 아니라면 바로 빠꾸
                 if diff != 1:
-                    possible = False
                     break
-                
-                # 높이가 낮아졌을 때 (앞으로 L개 경사로)
-                if grid[i][j] < grid[i][j-1]:
-                    for k in range(L):
-                        if j+k >= N or row_visited[j+k] or grid[i][j+k] != grid[i][j]:
-                            possible = False
-                            break
-                        row_visited[j+k] = True
-                    if not possible:
-                        break
-                
-                # 높이가 높아졌을 때 (뒤로 L개 경사로)
+                # 높이차이가 1인 경우
                 else:
-                    for k in range(L):
-                        if j-1-k < 0 or row_visited[j-1-k] or grid[i][j-1-k] != grid[i][j-1]:
-                            possible = False
-                            break
-                        row_visited[j-1-k] = True
-                    if not possible:
+                    # 높이가 낮아졌을때 
+                    if diff <0: 
+                        for k in range(1,L):
+                            if j+k < N and grid[i][j+k] == grid[i][j]:
+                                row_visited[j+k] = True
+                            else:
+                                print(f'{i},{j} 탈출')
+                                print(row_visited)
+                                break
                         break
-    
-    if possible:
-        result += 1
+                    # 높이가 높아졌을 때 
+                    else:
+                        for k in range(1,L+1):
+                            if j-k > 0 and row_visited[j-k] == False and grid[i][j-k] == grid[i][j-1]:
+                                row_visited[j-k] = True
+                            else:
+                                print(f'{i},{j} 탈출')
+                                print(row_visited)
+                                break
+                        break
+        if j == N-1:
+            print(f'row : {i} 번째')
+            result += 1
 
-# 열 검사
+#열
 for j in range(N):
+    # 경사로를 놓은 위치 기억
     col_visited = [False] * N
-    possible = True
-    
     for i in range(N):
-        if i != 0:
-            # 높이가 다를 때
+        # 행
+        if i != 0 and  col_visited[i] == False:
+            # 높이가 달라졌을 때 
             if grid[i][j] != grid[i-1][j]:
                 diff = abs(grid[i][j] - grid[i-1][j])
-                
-                # 높이 차이가 1이 아니면 불가능
+                # 높이차가 1이 아니라면 바로 빠꾸
                 if diff != 1:
-                    possible = False
                     break
-                
-                # 높이가 낮아졌을 때 (아래로 L개 경사로)
-                if grid[i][j] < grid[i-1][j]:
-                    for k in range(L):
-                        if i+k >= N or col_visited[i+k] or grid[i+k][j] != grid[i][j]:
-                            possible = False
-                            break
-                        col_visited[i+k] = True
-                    if not possible:
-                        break
-                
-                # 높이가 높아졌을 때 (위로 L개 경사로)
+                # 높이차이가 1인 경우
                 else:
-                    for k in range(L):
-                        if i-1-k < 0 or col_visited[i-1-k] or grid[i-1-k][j] != grid[i-1][j]:
-                            possible = False
-                            break
-                        col_visited[i-1-k] = True
-                    if not possible:
+                    # 높이가 낮아졌을때 
+                    if diff <0: 
+                        for k in range(1,L):
+                            if i+k < N and grid[i+k][j] == grid[i][j]:
+                                col_visited[i+k] = True
+                            else:
+                                print(f'{i},{j} 탈출')
+                                print(col_visited)
+                                
+                                break
                         break
-    
-    if possible:
-        result += 1
+                    # 높이가 높아졌을 때 
+                    else:
+                        for k in range(1,L+1):
+                            if i-k > 0 and col_visited[i-k] == False and grid[i-k][j] == grid[i-1][j]:
+                                col_visited[i-k] = True
+                            else:
+                                print(f'{i},{j} 탈출')
+                                print(col_visited)
+                                
+                                break
+                        break
+        if i == N-1:
+            print(f'col : {j} 번째')
+            result += 1
 
-print(result)
+                        
+print(result)                       
